@@ -1,0 +1,165 @@
+<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#banner{
+				clear:both;
+				height:64px;
+				position:absolute;
+				top:0px;
+				width:100%;
+			}
+			a{
+				text-decoration:none;
+				color:#522A64;
+			}
+			a:visited{
+				color:#3492C7;
+			}
+			#logo{
+				float:left;
+				height:15px;
+				color:#522A64;
+				font:bold 28px Arial;
+				padding-top:17px;
+				padding-left:60px;
+			}
+			#account_info{
+				float:right;
+				height:15px;
+				color:#3492C7;
+				font:bold 15px Arial;
+				margin-top:-20px;
+				margin-right:30px;
+				padding-left:20px;
+			}
+			#search_form{
+				margin-left:395px;
+				margin-top:19px;
+			}
+			#text{
+				margin: 0;
+				width:200px;
+				padding: 5px 15px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:12px;
+				border:1px solid #0076a3; 
+				border-right:0px;
+			}
+			#go {
+				margin: 0;
+				padding: 5px 15px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:12px;
+				outline: none;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				color: #522A64;
+				border: solid 1px #0076a3; border-right:0px;
+				background: #522A64;
+				background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+				background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+				border-top-right-radius: 5px 5px;
+				border-bottom-right-radius: 5px 5px;
+			}
+			#go:hover {
+				text-decoration: none;
+				background: #522A64;
+				background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+				background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+			}
+			#select {
+				width:80px;
+				height:26px;
+				padding: 5px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:12px;
+				outline: none;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				color: #666666;
+				border: solid 1px #0076a3; border-RIGHT:0px;
+				background: #FAFAFA;
+				border-top-left-radius: 5px 5px;
+				border-bottom-left-radius: 5px 5px;
+			}
+			option{
+				background-color:white;
+			}
+			.myButton {
+				width:55px;
+				height:20px;
+				-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+				-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+				box-shadow:inset 0px 1px 0px 0px #ffffff;
+				background-color:#ffffff;
+				-moz-border-radius:6px;
+				-webkit-border-radius:6px;
+				border-radius:6px;
+				border:1.5px solid #dcdcdc;
+				display:inline-block;
+				cursor:pointer;
+				color:#666666;
+				font-family:Arial;
+				font-size:13px;
+				font-weight:bold;
+				padding-left:6px;
+				padding-top:6px;
+				text-decoration:none;
+				text-shadow:0px 1px 0px #ffffff;
+				margin-top:-23px;
+				margin-right:6px;
+			}
+			#cart{
+				background-image:url("/images/cart.bmp");
+				background-repeat:no-repeat;
+				background-position:93%;
+				background-size:17px 17px;
+			}
+			.myButton:hover {
+				background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+				background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+				background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+				background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+				background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+				background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+				background-color:#f6f6f6;
+			}
+			.myButton:active {
+				position:relative;
+				top:1px;
+			}
+			#account{
+				width:80px;
+			}
+			#contact{
+				width:56px;
+				margin-right:25px;
+			}
+			#menu{
+				font:18px Arial;
+				width:100%;
+				height:32px;
+				background-color:#522A64;
+				padding-top:13px;
+				margin-top:60px;
+			}
+			a.link{
+				color:white;
+				width:15%;
+				margin-left:30px;
+			}
+			#computer{
+				margin-left:60px;
+			}
+			#deal{
+				float:right;
+			}
+			a.link:hover{
+				text-decoration: underline;
+			}

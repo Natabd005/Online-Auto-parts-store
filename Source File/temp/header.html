@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> header </title>
+		<link rel="stylesheet" type="text/css" href="css/header.css"></style>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+	</head>
+	<body>
+		<div id="banner">
+			<div id="logo">
+				<a id="home" target="mainFrame" href="home.html">Monkeys' Auto Part</a>
+			</div>
+
+			<div id="search_field">
+				<form id="search_form">
+					<select id="select">
+						<option value="All Books">All Books</option>
+						<option value="Computers">Computers</option>
+						<option value="Health">Health</option>
+						<option value="Cooking">Cooking</option>
+						<option value="Travelling">Travelling</option>
+						<option value="Children">Children</option>
+					</select><input id="text" type="text" /><input id="go" type="button" value="search" />
+				</form>
+			</div>
+
+			<div id="account_info"> 
+				<a class="myButton" id="signin" href="login.shtml">Sign In</a>
+				<a class="myButton" id="logout" style="display:none" onclick="logout()" >Log Out</a>
+				<a class="myButton" id="account" href="account.html">My Account</a> 
+				<a class="myButton" id="cart" href="cart.html">Cart</a>
+				<a class="myButton" id="contact" href="contact.html"> Contact </a>
+			</div>
+		</div>
+
+		<div id="menu">
+			<a id="computer" class="link" href="Computer.html">Computers</a>
+			<a class="link" href="Health.html">Health</a>
+			<a class="link" href="Cooking.html">Cooking</a>
+			<a class="link" href="Travelling.html">Travelling</a>
+			<a class="link" href="Children.html">Children</a>
+			<a id="deal" class="link" href="Cooking.html">Today's Deal</a>
+		</div>
+	</body>
+	
+	
+</html>

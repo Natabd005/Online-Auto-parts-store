@@ -1,0 +1,106 @@
+#content1{
+	height:520px;
+	width:600px;
+	margin-left:22%;
+	margin-top:4.2%;
+}
+
+img{
+	float:left;
+	width:350px;
+	height:350px;
+	margin-right:40px;
+	border: 1.5px solid #cccccc;
+}
+
+.text1{
+	padding-top:1px;
+	width:720px;
+}
+
+#description{
+	text-align:justify;
+	width:880px;
+}
+
+#qty{
+	width:50px;
+	text-align:center;
+}
+
+.text2{
+	width:1000px;
+	margin-left:15%;
+}
+
+span{
+	font-weight:bold;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+p#bookname{
+	line-height:25px;
+	width:1000px;
+}
+
+span#title{
+	font-size:28px;
+}
+
+p#price{
+	font-size:18px;
+	font-weight:bold;
+	margin-top:50px;
+	line-height:26px;
+}
+
+button{
+	width:100px;
+	height:30px;
+	margin-left:748px;
+	margin-top:-20px;
+	padding: 5px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #0076a3; border-right:0px;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	border-radius: 5px 5px;
+}
+
+button:hover {
+	text-decoration: none;
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+}
+
+button#toCart{
+	float:right;
+	margin-top:56px;
+	margin-left:120px;
+}
+
+#availability{
+	line-height:21px;
+	margin-top:50px;
+}
+
+h3#proDetail{
+	margin-bottom:7px;
+}
+
+li{
+	list-style-position:inside;
+}
+

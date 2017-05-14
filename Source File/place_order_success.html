@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Place Order Successfully</title>
+
+		<style type="text/css">
+
+			#main{
+				border:1.2px solid #cccccc;
+				margin:auto;
+				margin-top:5.5%;
+				background-color:#f2f2f2;
+				padding-top:2.3%;
+				padding-bottom:2%;
+				padding-left:4.8%;
+				width:60%;
+			}
+
+			#confirm{
+				font-size:26px;
+				font-weight:bold;
+			}
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"></style>
+		<link rel="stylesheet" type="text/css" href="css/header.css"></style>
+	</head>
+
+	<body>
+	
+	<div id="banner">
+			<div id="logo">
+				<a id="home" target="mainFrame" href="index.php">Monkey's Auto Parts</a>
+			</div>
+
+			<div id="search_field">
+				<form id="search_form" action="index.php" method="GET">
+					<select id="select" name="category">
+						<option value="0">All Auto Parts</option>
+						<option value="1">Motor Oil</option>
+						<option value="2">Wash & Wax</option>
+						<option value="3">Batteries</option>
+						<option value="4">Lights</option>
+						<option value="5">Tires & Wheels</option>
+					</select><input name="keyword" id="text" type="text" /><input id="go" type="submit" value="search" />
+				</form>
+			</div>
+
+			<div id="account_info"> 
+				<a class="myButton" id="signin" target="mainFrame" href="login.html">Sign In</a>
+				<a class="myButton" id="logout" style="display:none" onclick="logout()" >Log Out</a>
+				<a class="myButton" id="account" target="mainFrame" href="account.php">My Account</a> 
+				<a class="myButton" id="cart" target="mainFrame" href="showCart.php">Cart</a>
+				<a class="myButton" id="contact" target="mainFrame" href="contact.html"> Contact </a>
+			</div>
+		</div>
+
+		<div id="menu">
+			<a id="computer" class="link" target="mainFrame" href="index.php?category=1">Motor Oil</a>
+			<a class="link" target="mainFrame"  href="index.php?category=2">Wash & Wax</a>
+			<a class="link" target="mainFrame"  href="index.php?category=3">Batteries</a>
+			<a class="link" target="mainFrame"  href="index.php?category=4">Lights</a>
+			<a class="link" target="mainFrame"  href="index.php?category=5">Tires & Wheels</a>
+
+		</div>
+
+		<div id="main">
+			<p id="confirm">Thank you, your order has been placed.</p><br/>
+
+			<p>Order Number:<span id="orderId"></span> </p><br/>
+
+			<p>When your order ships, you will receive an email. </p><br/>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/><br/>
+		<div id="foot" align="center" style="position:absolute">
+			Copyright @Monkeys' Auto Parts
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	
+	<script>
+		var id = getUrlParam("orderId");
+		$("#orderId").text(id);
+	</script>
+</html>
+
+
+

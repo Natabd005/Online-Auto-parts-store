@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Sign In </title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/login.css"></style>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"></style>
+		<link rel="stylesheet" type="text/css" href="css/header.css"></style>
+	</head>
+
+	<body>
+			<div id="banner">
+			<div id="logo">
+				<a id="home" target="mainFrame" href="index.php">Monkeys' Auto Parts</a>
+			</div>
+
+			<div id="search_field">
+				<form id="search_form" action="index.php" method="GET">
+					<select id="select" name="category">
+						<option value="0">All Auto Parts</option>
+						<option value="1">Motor Oil</option>
+						<option value="2">Wash & Wax</option>
+						<option value="3">Batteries</option>
+						<option value="4">Lights</option>
+						<option value="5">Tires & Wheels</option>
+					</select><input name="keyword" id="text" type="text" /><input id="go" type="submit" value="search" />
+				</form>
+			</div>
+
+			<div id="account_info"> 
+				<a class="myButton" id="signin" target="mainFrame" href="login.html">Sign In</a>
+				<a class="myButton" id="logout" style="display:none" onclick="logout()" >Log Out</a>
+				<a class="myButton" id="account" target="mainFrame" href="account.php">My Account</a> 
+				<a class="myButton" id="cart" target="mainFrame" href="showCart.php">Cart</a>
+				<a class="myButton" id="contact" target="mainFrame" href="contact.html"> Contact </a>
+			</div>
+		</div>
+
+		<div id="menu">
+			<a id="computer" class="link" target="mainFrame" href="index.php?category=1">Motor Oil</a>
+			<a class="link" target="mainFrame"  href="index.php?category=2">Wash & Wax</a>
+			<a class="link" target="mainFrame"  href="index.php?category=3">Batteries</a>
+			<a class="link" target="mainFrame"  href="index.php?category=4">Lights</a>
+			<a class="link" target="mainFrame"  href="index.php?category=5">Tires & Wheels</a>
+
+		</div>
+		
+		<div id="main" style="overflow:hidden;min-height:600px">
+			<br>
+			<h1 style="margin-left:200px; margin-top:20px">SIGN IN</h1>
+
+			<div id="left">
+
+				<h3> RETURNING CUSTOMERS</h3>
+
+				<P>If you already have an account, please enter <br/>your email address and password.</P>
+				<span style="color:red" id="login_err"></span>
+				<form action="login.php" method="post">
+					E-mail <br/>
+					<input id="login_mail" type="text" name="email"> <br/><br/>
+
+					Password <br/>
+					<input id="password" type="password" name="passwd"> <br/><br/>
+
+					<button id="toCart">Sign In</button>
+				</form>
+			</div>
+
+			<div id="right">
+
+				<h3> NEW CUSTOMERS</h3>
+
+				<P>Enter your information to create an account. <span style="font-weight:bold">Please note all fields are required.</span></P>
+
+				<form action="register.php" method="post" id="reg">
+					First Name <br/>   
+					<input type="fname" name="fname" id="firstname" class="valid info"/><span></span> <br/><br/>
+
+					Last Name <br/>
+					<input type="lname" name="lname" id="lastname" class="valid info"/><span></span> <br/><br/>
+
+					E-mail <br/>
+					<input type="text" name="email" id="email" class="valid info"/><span></span> <br/><br/>
+
+					Password <br/>
+					<input type="password" name="passwd" id="passwd" class="valid info"/><span></span> <br/><br/>
+
+					Re-type Password<br/>
+					<input type="password" id="rettyPasswd" class="valid info"/><span></span><br/><br/>
+					
+				</form>
+				<button onclick="onSubmit()">Sign Up</button>
+				<br/>
+				<br/>
+				<br/>				
+			</div>	
+		
+		</div>
+		<div id="foot" align="center" style="position:absolute">
+			Copyright @Monkeys' Auto Parts
+		</div>
+	</body>
+	
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	
+	<script>
+		var email = getUrlParam("email");
+		if(email){
+			showError();
+		}
+		
+		function showError(){
+			$("#login_mail").val(email);
+			$("#login_err").text("no Email and password was matched");
+		}
+		
+		
+	</script>
+</html>
+
+
+
+
+

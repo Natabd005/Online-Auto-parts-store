@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Sign_in </title>
+		<style type="text/css">
+			#main{
+				width:100%;
+				height:100%;
+			}
+
+
+			#content{
+				margin: 0 auto;
+				width:350px;
+
+			}
+
+
+			input.signin{
+				width:342px;
+				height:18px;
+
+			}
+
+			button{
+				width:100px;
+				height:30px;
+				padding: 5px 15px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:12px;
+				outline: none;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				color: #ffffff;
+				border: solid 1px #0076a3; border-right:0px;
+				background: #0095cd;
+				background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+				background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+				border-radius: 5px 5px;
+			}
+
+			button:hover {
+				text-decoration: none;
+				background: #007ead;
+				background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+				background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+			}
+
+			h3{
+				text-align:center;
+				background-color:#a6a6a6;
+				color:white;
+				padding-left:15px;
+				padding-top:6px;
+				height:25px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="main">
+
+			<div id="content">
+
+				<h3>Administrator Login </h3><br/>
+
+
+				<form method="POST" action="/admin/login.php">
+					UserName <br/>
+					<input class="signin" id="ID" type="text" name="name"> <br/><br/>
+
+					Password <br/>
+					<input class="signin" id="password" type="password" name="password"> <br/><br/>
+
+					<button id="login">LogIn</button>
+				</form>
+			</div>
+
+
+
+		</div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	</body>
+</html>
+
+
+

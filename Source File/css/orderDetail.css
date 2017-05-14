@@ -1,0 +1,84 @@
+			#main{
+				margin-top:33px;
+			}
+
+			#right{
+				float:right;
+				margin-right:49%;
+				width:330px;
+			}
+
+			hr{
+				border-color:black;
+				width:628px;
+			}
+
+
+			#link{
+				text-decoration:none;
+				padding-left:30px;
+				color:#999999;
+			}
+
+			#link:hover{
+				color: black;
+			}
+
+			.dateNo{
+				width:604px;
+				height:55px;
+				color:white;
+				background-color:#bfbfbf;
+				padding-top:0.1px;
+				padding-left:25px;
+			}
+
+			#summary{
+				line-height:25px;
+				width:603px;
+				height:225px;
+				border:1.2px solid #cccccc;
+				padding-top:10px;
+				padding-bottom:20px;
+				padding-left:25px;
+			}
+
+			table{
+				margin-top:10px;
+			}
+
+			td{
+				width:150px;
+			}
+
+			.price{
+				text-align:right;
+			}
+
+			img{
+				float:left;
+				margin-top:12px;
+				margin-right:23px;
+				width:130px;
+				height:180px;
+				border:1.2px solid #cccccc;
+			}
+
+			#all{
+				width:603px;
+				padding-top:10px;
+				padding-left:25px;
+				border-left:1.2px solid #cccccc;
+				border-right:1.2px solid #cccccc;
+				border-bottom:1.2px solid #cccccc;
+			}
+
+			.des{
+				margin-top:18px;
+				line-height:25px;
+			}
+
+			.item{
+				width:603px;
+				height:218px;
+			}
